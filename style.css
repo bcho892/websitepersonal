@@ -296,16 +296,26 @@ b{
     -webkit-animation-iteration-count: infinite;
 }
 
+.info{
+    display: flex;
+}
+
+.card{
+    background: none;
+    border: none;
+}
+
 .cards{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
+    flex-direction: row;
 }
 
 .card-body{
     position:relative;
-    margin: 0 -2rem;
+    margin: 0 1rem;
     width: 40rem;
     height: 35rem;
     border: 1px solid var(--c2);
@@ -318,15 +328,17 @@ b{
     color: var(--c2);
 }
 
-#card1.off{
-    display: none;
+.line{
+
+    height: 5px;
+    width: 0%;
+    content: '';
+    background-color: var(--c2);
+    transition: width .4s ease-in;
 }
 
-#card2.off{
-    display: none;
-}
-#card3.off{
-    display: none;
+.line.active{
+    width: 100%;
 }
 
 .down{
@@ -352,7 +364,7 @@ b{
 }
 
 .cards p{
-    line-height: 2.1rem;
+    line-height: 1.8rem;
 }
 
 .second-section{
@@ -362,7 +374,6 @@ b{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
 }
 
 .second-section h1{

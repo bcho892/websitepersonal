@@ -4,6 +4,7 @@ var nav = $("nav")
 var navlink = $('nav ul li a')
 var underlines = $("nav ul li")
 var totop = $(".totop")
+var line = $(".line")
 $(window).scroll(function() {
     var hT = $('#page2').offset().top,
         wH = $(window).height(),
@@ -16,7 +17,7 @@ $(window).scroll(function() {
         underlines.removeClass("active")
         body.removeClass("active")
         totop.removeClass("active")
-
+        line.removeClass("active")
     }
     else if (wS > (hT-wH)){
         container1.addClass("active");
@@ -25,6 +26,8 @@ $(window).scroll(function() {
         underlines.addClass("active")
         body.addClass("active")
         totop.addClass("active")
+        line.addClass("active")
+
     }
 
  });
