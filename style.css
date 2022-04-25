@@ -199,6 +199,8 @@ nav.active {
 .details h1{
     font-size: 6rem;
     
+
+    
 }
 
 .details h2{
@@ -311,6 +313,9 @@ b{
     justify-content: center;
     width: 100%;
     flex-direction: row;
+    outline: 2px solid var(--c2);
+    box-shadow: 10px 10px 0 0 var(--c2);
+    margin-bottom: 6rem ;
 }
 
 .card-body{
@@ -385,6 +390,35 @@ b{
 
 }
 
+.projects{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro{
+    height: 20rem;
+    width: auto;
+}
+
+footer{
+    height: 8rem;
+    width: 100%;
+    position: relative;
+    background-color: var(--c3);
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 2140px){
+    .second-section .aboutimage{
+        clip-path: inset(49% 0 35% 0);
+
+    }
+}
 
 
 @media only screen and (min-width:1600px) {
@@ -411,8 +445,10 @@ b{
         justify-content: center;
     }
     
+
+
     .cards{
-        margin-top: 6rem;
+        margin-top: 8rem;
     }
     
 
