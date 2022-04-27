@@ -85,6 +85,17 @@ body.active{
     display: block;
 }
 
+nav svg{
+    display: none;
+}
+
+nav{
+    background-color: white;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;  
+}
+
 nav{
     position: fixed;
     right:0;
@@ -95,7 +106,6 @@ nav{
     transition: background-color 500ms linear;   
      flex: 1;
     text-align: right;
-    
     width: 100%;
   
 }
@@ -103,6 +113,7 @@ nav{
 nav ul li{
     position: relative;
     display:inline-block;
+
     margin-right: 3rem;
     position: relative;
     margin-top: 1rem;
@@ -156,6 +167,13 @@ nav ul li.active:hover::after{
 
 nav ul li:hover::after{
 width: 100%;
+}
+
+nav ul.active{
+    background-color: var(--c2);
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;  
 }
 
 nav.active {
@@ -576,10 +594,40 @@ footer{
 
 
 @media only screen and (max-width:750px) {
-    nav ul{
-        width: 100%;
+    nav svg{
+        position: absolute;
+        display: block;
+        right: 1rem;
+        top: 0.5rem;
+        
     }
-    nav ul li a{
+
+    nav{
+        height: 2.4rem;
+
+    }
+
+    nav ul{
+        margin-top: 2.5rem;
+        width: 100%;
+        background-color: white;
+        padding-bottom: 0.5rem;
+
+
+    }
+    nav ul li{
+        display: flex;
+        
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        transition: height 0.4s ease-in;
+    }
+    nav ul li.opened{
+        display: none;       
+    }
+
+    nav ul li a.opened{
         font-size: 1rem;
     }
 

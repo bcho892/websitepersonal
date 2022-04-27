@@ -4,13 +4,14 @@ var nav = $("nav")
 var navlink = $('nav ul li a')
 var underlines = $("nav ul li")
 var totop = $(".totop")
+var navbackground = $("nav ul")
 var line = $(".line")
 $(window).scroll(function() {
     var hT = $('#page2').offset().top,
         wH = $(window).height(),
         wS = $(this).scrollTop();
 
-    if ((wS < (hT-wH)) || wS < 70){
+    if ((wS < (hT-wH)) || wS < 300){
         container1.removeClass("active");
         nav.removeClass("active");
         navlink.removeClass("active")
@@ -18,6 +19,8 @@ $(window).scroll(function() {
         body.removeClass("active")
         totop.removeClass("active")
         line.removeClass("active")
+        navbackground.removeClass("active")
+
     }
     else if (wS > (hT-wH)){
         container1.addClass("active");
@@ -27,6 +30,8 @@ $(window).scroll(function() {
         body.addClass("active")
         totop.addClass("active")
         line.addClass("active")
+        navbackground.addClass("active")
+
 
     }
 
@@ -43,3 +48,7 @@ function turnOff(current, next){
      document.getElementById("page2").scrollIntoView({ behavior: 'smooth' , block: 'start', inline: 'nearest'});
      
  }
+
+ function menuOpen(){
+    $('nav ul li').toggleClass('opened');
+}
