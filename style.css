@@ -443,12 +443,28 @@ footer{
     overflow: visible;
 } 
 
-
 .content { 	
     width: 50rem;
     height: 20rem;
     margin: 0 auto; 
 }
+
+.skill{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    color: var(--c2)
+}
+.skill p{
+    font-size: 2.3rem;
+}
+
+.skill svg{
+   position: absolute;
+    height:60px;
+    transform: translate(-19px,29px);
+}
+
 @media only screen and (min-width: 2140px){
     .second-section .aboutimage{
         clip-path: inset(49% 0 35% 0);
