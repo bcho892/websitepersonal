@@ -7,18 +7,25 @@ var totop = $(".totop")
 var navbackground = $("nav ul")
 var line = $("#line0")
 var line1 = $("#line1")
+const skills = ['htmllevel', 'csslevel', 'jslevel', 'javalevel', 'clevel'];
 $(window).scroll(function() {
     var hT = $('#page2').offset().top,
         wH = $(window).height(),
         wS = $(this).scrollTop(),
         hTskills = $('.skillintro').offset().top;
 
-    if (wS > (hTskills-wH)){
+    if (wS > (hTskills-wH+100)){
             line1.addClass("active");
+            loadSliders();
+    }
+
+    if (wS < (hTskills-200)){
+        removeSliders();
     }
 
     if (wS < (hTskills-wH)){
         line1.removeClass("active")
+        
     }
 
     if ((wS < (hT-wH)) || wS < 300){
@@ -61,6 +68,25 @@ function turnOff(current, next){
     window.scrollTo(0, hT)     
  }
 
+ function scrollSkills(){
+     var hT = $('#line1').offset().top;
+     window.scrollTo(0, hT)
+ }
+
  function menuOpen(){
     $('nav ul li').toggleClass('opened');
+}
+
+function loadSliders(){
+    var elements = $(".skills .skillbar .skills");
+    for(let i = 0; i < skills.length; i++){
+        $(elements[i]).addClass(skills[i]);
+    }
+}
+
+function removeSliders(){
+    var elements = $(".skills .skillbar .skills");
+    for(let i = 0; i < skills.length; i++){
+        $(elements[i]).removeClass(skills[i]);
+    }
 }
