@@ -12,20 +12,18 @@ $(window).scroll(function() {
     var hT = $('#page2').offset().top,
         wH = $(window).height(),
         wS = $(this).scrollTop(),
-        hTskills = $('.skillintro').offset().top;
+        hTskills = $('.skills').offset().top;
 
-    if (wS > (hTskills-wH+100)){
+    if (wS > (hTskills-wH)){
             line1.addClass("active");
             loadSliders();
     }
 
-    if (wS < (hTskills-200)){
-        removeSliders();
-    }
 
     if (wS < (hTskills-wH)){
         line1.removeClass("active")
-        
+        removeSliders();
+
     }
 
     if ((wS < (hT-wH)) || wS < 300){
@@ -74,7 +72,13 @@ function turnOff(current, next){
  }
 
  function menuOpen(){
-    $('nav ul li').toggleClass('opened');
+     if(!$('nav ul li').hasClass('opened')){
+    $('nav ul li').addClass('opened');
+    return;
+     } else{
+        $('nav ul li').removeClass('opened');
+
+     }
 }
 
 function loadSliders(){

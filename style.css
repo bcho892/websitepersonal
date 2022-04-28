@@ -63,7 +63,7 @@ body.active{
 
 .container1.active{
     transform: translateY(-900px);
-      
+       
     
 }
 
@@ -194,7 +194,7 @@ nav.active {
 .column{
     display: flex;
     flex-direction: column;
-    
+    z-index: 300;
 }
 
 .container{
@@ -446,6 +446,12 @@ footer{
     display: flex;
     flex-direction: column;
 }
+
+#firstdiagonal{
+    position: absolute;
+    transform: skewY(15deg) ;
+    z-index: -1;
+}
 .diagonal-box {
     background-image: linear-gradient(45deg, var(--c3), var(--c2));
     transform: skewY(-30deg) translate(50rem, 30rem);
@@ -456,6 +462,27 @@ footer{
     width: 50rem;
     height: 20rem;
     margin: 0 auto; 
+}
+
+#interests{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+#interests h5{
+    font-size: 3rem;
+}
+#interests p{
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.skills{
+    margin-bottom: 6rem;
 }
 
 .skills .skillbar{
@@ -488,17 +515,24 @@ footer{
     display: flex;
     flex-direction: row;
     text-align: left;
-    color: var(--c2)
+    color: var(--c2);
 }
 .skill p{
     font-size: 2.3rem;
 }
 
+.skill .includes{
+    transform: translate(-28px, 55px);
+}
+
 .skill svg{
    position: absolute;
     height:60px;
-    transform: translate(-19px,29px);
+    transform: translate(-19px,28px);
 }
+
+
+
 
 @media only screen and (min-width: 2140px){
     .second-section .aboutimage{
@@ -536,6 +570,7 @@ footer{
 
     .cards{
         margin-top: 8rem;
+      
     }
     
 
@@ -588,6 +623,7 @@ footer{
 
     .container1{
         margin: 22% 0;
+      
     }
 
     #color-strip1{
@@ -686,15 +722,16 @@ footer{
 
     }
     nav ul li{
-        display: flex;
-        
+        display: none;       
+
         position: relative;
         flex-direction: column;
         align-items: center;
         transition: height 0.4s ease-in;
     }
     nav ul li.opened{
-        display: none;       
+        display: flex;
+
     }
 
     nav ul li a.opened{
@@ -709,6 +746,23 @@ footer{
     .mobiledetails{
         padding-left: 1rem;
 
+    }
+
+    #interests{
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    #interests h5{
+        font-size: 1.1rem;
+    }
+    #interests p{
+        width: 100%;
+        font-size: 1rem;
+        text-align: center;
     }
 
     .skillintro p{
@@ -756,6 +810,22 @@ footer{
     .cards{
         flex-direction: column;
     }
+
+    .skill {
+       text-align: left;
+        flex-direction: column;
+    }
+    .skill .maininfo{
+        display: flex;
+        align-items: center;
+    }
+    .skill .includes{
+        transform: translateY(-3.3rem);
+    }
+    .skill #java{
+       transform: translate(-18px,-15px);
+    }
+ 
 }
 @media only screen and (max-width:400px) {
     .details h1{
