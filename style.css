@@ -84,6 +84,7 @@ body.active{
     
 }
 
+
 .totop{
     position: fixed;
     width: 100px;
@@ -571,6 +572,7 @@ footer{
 }
   
 .projectdisplay {
+    padding-top: 5rem;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
@@ -579,10 +581,22 @@ footer{
     
 }
 .card-deck{
+    
     display: flex;
     white-space: normal;
 }
 
+.card-deck .card-body{
+    border-radius: 0px;
+    box-shadow: 10px 10px 0 0 var(--c2);
+
+}
+
+.card-deck .btn.btn-primary{
+    background: none;
+    border: 2px solid var(--c2);
+    color: var(--c2);
+}
 
 @media only screen and (min-width: 2140px){
     .second-section .aboutimage{
