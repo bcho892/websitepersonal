@@ -5,11 +5,21 @@ var navlink = $('nav ul li a')
 var underlines = $("nav ul li")
 var totop = $(".totop")
 var navbackground = $("nav ul")
-var line = $(".line")
+var line = $("#line0")
+var line1 = $("#line1")
 $(window).scroll(function() {
     var hT = $('#page2').offset().top,
         wH = $(window).height(),
-        wS = $(this).scrollTop();
+        wS = $(this).scrollTop(),
+        hTskills = $('.skillintro').offset().top;
+
+    if (wS > (hTskills-wH)){
+            line1.addClass("active");
+    }
+
+    if (wS < (hTskills-wH)){
+        line1.removeClass("active")
+    }
 
     if ((wS < (hT-wH)) || wS < 300){
         container1.removeClass("active");
@@ -20,6 +30,7 @@ $(window).scroll(function() {
         totop.removeClass("active")
         line.removeClass("active")
         navbackground.removeClass("active")
+        
 
     }
     else if (wS > (hT-wH)){
@@ -35,6 +46,7 @@ $(window).scroll(function() {
 
     }
 
+    
  });
 
 function turnOff(current, next){
@@ -45,8 +57,8 @@ function turnOff(current, next){
 
 
  function scrollDown(){
-     document.getElementById("page2").scrollIntoView({ behavior: 'smooth' , block: 'start', inline: 'nearest'});
-     
+    var hT = $('#page2').offset().top;
+    window.scrollTo(0, hT)     
  }
 
  function menuOpen(){

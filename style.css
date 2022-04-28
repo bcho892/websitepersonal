@@ -85,8 +85,8 @@ body.active{
     text-align: center;
 }
 .totop svg{
-    padding-top: 0.9rem;
-    height:5rem;
+    padding-top: 1.8rem;
+    height:4rem;
 }
 .totop.active{
     display: block;
@@ -373,7 +373,8 @@ b{
 
 .cards h5{
     font-size: 4rem;
-
+    font-weight: 600;
+    color: var(--c2)
 }
 
 
@@ -397,12 +398,7 @@ b{
     justify-content: center;
 }
 
-.second-section h1{
-    font-size: 6rem;
-    color: var(--c2);
-    font-family: 'Courier New', Courier, monospace;
-    
-}
+
 
 .second-section .aboutimage{
     position: absolute;
@@ -415,11 +411,24 @@ b{
 
 }
 
-.projects{
+.skillintro{
+    margin-top: 6rem;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.skillintro h1{
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--c2)
+}
+
+.skillintro p{
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .intro{
@@ -449,6 +458,30 @@ footer{
     margin: 0 auto; 
 }
 
+.skills .skillbar{
+    width: 100%;
+    height: 3rem;
+    border: 2px solid var(--c4);
+    transform: translateY(-3rem);
+    border-radius: 2px;
+    display: flex;
+    background: none;
+    justify-content: left;
+}
+
+.skills .skillbar .skills{
+    width:100%;
+    height: 100%;
+    background: linear-gradient(to right, var(--c1), var(--c3));
+    border-radius: 0 5px 5px 0;
+    
+}
+
+.skills .skillbar .skills.htmllevel {width: 90%; }
+.skills .skillbar .skills.csslevel {width: 80%;}
+.skills .skillbar .skills.jslevel {width: 70%;}
+.skills .skillbar .skills.javalevel {width: 70%;}
+.skills .skillbar .skills.clevel {width: 60%;}
 .skill{
     display: flex;
     flex-direction: row;
@@ -622,6 +655,7 @@ footer{
 
     .cards p{
         width: 100%;
+        font-size: 0.9rem;
     }
 
 }
@@ -673,6 +707,10 @@ footer{
     .mobiledetails{
         padding-left: 1rem;
 
+    }
+
+    .skillintro p{
+        font-size: 1.3rem;
     }
 
     .right-side{
