@@ -40,6 +40,23 @@
     padding: 0;
 }
 
+::-webkit-scrollbar {
+    width: 13px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--c2); 
+  }
+
 html, body{
     overflow-x: hidden;
 }
@@ -447,21 +464,32 @@ footer{
     flex-direction: column;
 }
 
-#firstdiagonal{
-    position: absolute;
-    transform: skewY(15deg) ;
-    z-index: -1;
-}
-.diagonal-box {
+
+.rectangle-box {
+    width: 100%;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    height: 15rem;
+    margin-top: 5rem;
     background-image: linear-gradient(45deg, var(--c3), var(--c2));
-    transform: skewY(-30deg) translate(50rem, 30rem);
     overflow: visible;
+    display: flex;
+
+    justify-content: center;
+
 } 
 
 .content { 	
-    width: 50rem;
-    height: 20rem;
-    margin: 0 auto; 
+    
+    padding-top: 3rem;
+
+    font-weight: 600;
+    font-size: 5rem;
+    box-sizing: border-box;
+    color: white;
+    line-height: 4.5rem;
+    
 }
 
 #interests{
@@ -474,6 +502,7 @@ footer{
 
 #interests h5{
     font-size: 3rem;
+    text-align: center;
 }
 #interests p{
     width: 100%;
@@ -481,8 +510,9 @@ footer{
     text-align: center;
 }
 
-.skills{
+.skills:last-child{
     margin-bottom: 6rem;
+    
 }
 
 .skills .skillbar{
@@ -494,6 +524,11 @@ footer{
     display: flex;
     background: none;
     justify-content: left;
+    
+}
+
+.skillholder{
+    margin-bottom: -3.5rem;
 }
 
 .skills .skillbar .skills{
@@ -531,7 +566,22 @@ footer{
     transform: translate(-19px,28px);
 }
 
-
+#line2{
+    margin-top: 10rem;
+}
+  
+.projectdisplay {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    
+}
+.card-deck{
+    display: flex;
+    white-space: normal;
+}
 
 
 @media only screen and (min-width: 2140px){
@@ -758,6 +808,7 @@ footer{
 
     #interests h5{
         font-size: 1.1rem;
+        text-align: center;
     }
     #interests p{
         width: 100%;
