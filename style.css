@@ -28,11 +28,20 @@
     100%{ -webkit-transform: translateY(-500px) ; } 
 }
 
-@keyframes reappear {
-    0% { -webkit-transform: translateY(0) ; } 
 
-    100%{ -webkit-transform: translateY(500) ; } 
+
+@keyframes disappearleft {
+    0% { -webkit-transform: translateX(0) ; } 
+
+    100%{ -webkit-transform: translateX(1000px) ; } 
 }
+@keyframes wobble {
+    0% { -webkit-transform: translateX(0) ; } 
+    50% { -webkit-transform: translateX(-10%) ;}
+    100%{ -webkit-transform: translateX(0) ; } 
+}
+
+
 
 *{
     font-family: Helvetica, sans-serif;
@@ -87,6 +96,25 @@ body.active{
     
 }
 
+.dragcircle.off{
+    opacity: 0;
+}
+
+.dragcircle{
+    display: none;
+    padding-top: 1.3rem;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    position:fixed;
+    border-radius: 50%;
+    height:70px;
+    width: 70px;
+    background-color: var(--c3);
+    z-index: 999;
+    opacity: 1;
+    transition: opacity 0.2s ease-out;
+}
 
 .totop{
     position: fixed;
@@ -386,12 +414,19 @@ b{
     content: '';
     background-color: var(--c2);
     transition: width .4s ease-in;
+    
 }
 
 .line.active{
     width: 100%;
+
 }
 
+#line1.active,#line15.active{
+    -webkit-animation-name: wobble;
+    -webkit-animation-duration: 1.2s;
+    -webkit-animation-iteration-count: 1;
+}
 
 
 .cards h5{
@@ -489,13 +524,14 @@ footer{
 }
 
 #interests{
-    margin-top: 0;
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     outline: none;
     box-shadow: none;
+    margin-bottom: 3rem;
 }
 
 #interests h5{
@@ -576,6 +612,7 @@ footer{
     display: grid;
     grid-auto-flow: column;
     justify-content: center;
+    z-index: -1;
 }
 
 .projectdisplay .card-body{
@@ -587,8 +624,20 @@ footer{
 
 }
 
+
+
 #projecttitle{
     background: none;
+    position: relative;
+    box-shadow: none;
+    right:1000px;
+}
+
+#projecttitle.active{
+    -webkit-animation-name: disappearleft;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+    transform: translateX(1000px);
 }
 
 .projectdisplay img{
@@ -614,7 +663,29 @@ footer{
     height: 20rem;
     margin-top: 10rem;
     background-color: var(--c1);
+
 }
+
+.footer .container{
+    background: none;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+
+}
+
+.footer h1{
+    color:white;
+    font-weight: 100;
+    font-size: 1rem;
+
+}
+
+#footersocials{
+    top:0;
+    justify-content: center;
+}
+
 
 @media only screen and (min-width: 2140px){
     .second-section .aboutimage{
@@ -646,7 +717,6 @@ footer{
         align-items: center;
         justify-content: center;
     }
-
 
 
   
@@ -745,6 +815,15 @@ footer{
     .projectdisplay{
         justify-content: left;
 
+    }
+
+    .dragcircle{
+        display: block;
+    }
+    
+    .projectdisplay .card-body:hover{
+        cursor:grab;
+    
     }
 }
 
