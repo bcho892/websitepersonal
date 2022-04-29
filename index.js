@@ -27,7 +27,7 @@ $(window).scroll(function() {
 
 
     
-    if (wS > (hTskills-wH)){
+    if (wS > (hTskills-wH+200)){
             loadSliders();
             line1.addClass("active");
             line15.addClass("active");
@@ -55,7 +55,7 @@ $(window).scroll(function() {
         menu.removeClass("active");
 
 
-    }  else if (wS > (projects - wH +300)){
+    }  else if (wS > (projects - wH )){
         body.removeClass('active');
         container.removeClass("active");
         projecttitle.addClass("active");
@@ -113,11 +113,17 @@ function turnOff(current, next){
 }
 
 function loadSliders(){
-    var elements = $(".skills .skillbar .skills");
-    for(let i = 0; i < skills.length; i++){
-        $(elements[i]).addClass(skills[i]);
+
+        var elements = $(".skills .skillbar .skills");
+        for(let i = 0; i < skills.length; i++){
+            
+                $(elements[i]).addClass(skills[i]);
+
+            
+        }
+
     }
-}
+
 
 function removeSliders(){
     var elements = $(".skills .skillbar .skills");
