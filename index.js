@@ -7,15 +7,19 @@ var totop = $(".totop")
 var navbackground = $("nav ul")
 var line = $("#line0")
 var line1 = $("#line1")
+var container = $(".container")
 const skills = ['htmllevel', 'csslevel', 'jslevel', 'javalevel', 'clevel'];
 $(window).scroll(function() {
     var hT = $('#page2').offset().top,
         wH = $(window).height(),
         wS = $(this).scrollTop(),
         hTskills = $('.skills').offset().top;
+        projects = $('#lastskill').offset().top;
+
+
+
 
     if (wS > (hTskills-wH)){
-            line1.addClass("active");
             loadSliders();
     }
 
@@ -35,7 +39,11 @@ $(window).scroll(function() {
         totop.removeClass("active")
         line.removeClass("active")
         navbackground.removeClass("active")
-        
+        container.removeClass("active")
+
+    }  else if (wS > (projects - wH)){
+        body.removeClass('active');
+        container.removeClass("active")
 
     }
     else if (wS > (hT-wH)){
@@ -47,6 +55,8 @@ $(window).scroll(function() {
         totop.addClass("active")
         line.addClass("active")
         navbackground.addClass("active")
+        container.addClass("active")
+        line1.addClass("active");
 
 
     }
