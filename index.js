@@ -9,7 +9,9 @@ totop = $(".totop"),
  line1 = $("#line1"),
  line15 = $("#line15"),
  container = $(".container"),
- projecttitle = $("#projecttitle");
+ projecttitle = $("#projecttitle"),
+ goals = $('#goals'),
+ menu = $('nav svg');
 const skills = ['htmllevel', 'csslevel', 'jslevel', 'javalevel', 'clevel'];
 $(window).scroll(function() {
     var hT = $('#page2').offset().top,
@@ -36,7 +38,6 @@ $(window).scroll(function() {
         removeSliders();
         line1.removeClass("active");
         line15.removeClass("active");
-
     }
 
     if ((wS < (hT-wH)) || wS < 300){
@@ -50,26 +51,29 @@ $(window).scroll(function() {
         navbackground.removeClass("active")
         container.removeClass("active")
         projecttitle.removeClass("active")
+        goals.removeClass("active");
+        menu.removeClass("active");
 
 
-    }  else if (wS > (projects - wH +180)){
+    }  else if (wS > (projects - wH +300)){
         body.removeClass('active');
-        container.removeClass("active")
+        container.removeClass("active");
         projecttitle.addClass("active");
 
 
     }
     else if (wS > (hT-wH)){
         container1.addClass("active");
-        navlink.addClass("active")
+        navlink.addClass("active");
         nav.addClass("active");
-        underlines.addClass("active")
-        body.addClass("active")
-        totop.addClass("active")
-        line.addClass("active")
-        navbackground.addClass("active")
-        container.addClass("active")
-
+        underlines.addClass("active");
+        body.addClass("active");
+        totop.addClass("active");
+        line.addClass("active");
+        navbackground.addClass("active");
+        container.addClass("active");
+        goals.addClass("active");
+        menu.addClass("active");
 
     }
 

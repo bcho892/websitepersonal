@@ -143,6 +143,11 @@ body.active{
 
 nav svg{
     display: none;
+    fill:var(--c2);
+}
+
+nav svg.active{
+    fill:white;
 }
 
 nav{
@@ -394,6 +399,12 @@ b{
     margin-bottom: 6rem ;
 }
 
+#goals.active{
+    -webkit-animation-name: wobble;
+    -webkit-animation-duration: 0.8s;
+    -webkit-animation-iteration-count: 1; 
+}
+
 .card-body{
     position:relative;
     margin: 0 1rem;
@@ -598,6 +609,7 @@ footer{
    position: absolute;
     height:60px;
     transform: translate(-19px,28px);
+    fill: var(--c2);
 }
 
 #line2{
@@ -606,13 +618,15 @@ footer{
 }
   
 .projectdisplay {
-    margin-top: 5rem;
+    margin-top: 7rem;
     overflow-x: scroll;
     overflow-y: hidden;
     display: grid;
     grid-auto-flow: column;
     justify-content: center;
     z-index: -1;
+    padding-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 .projectdisplay .card-body{
@@ -621,10 +635,16 @@ footer{
     width:35rem;
     box-shadow: 10px 10px 0 0 var(--c2);
     border-radius: 0;
-
+    line-height: 2rem;
 }
 
+.projectdisplay p{
+    margin-bottom: 0;
+}
 
+.projectdisplay img{
+    padding-left: 7rem;
+}
 
 #projecttitle{
     background: none;
@@ -652,38 +672,65 @@ footer{
 
 
 
-.card-deck .btn.btn-primary{
-    background: none;
-    border: 2px solid var(--c2);
-    color: var(--c2);
-}
 
+
+.projectconclusion{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    
+}
+.projectconclusion p{
+    text-align: center;
+}
 .footer{
     width: 100%;
-    height: 20rem;
-    margin-top: 10rem;
+    height: 16rem;
+    margin-top: 5rem;
     background-color: var(--c1);
-
 }
 
 .footer .container{
     background: none;
     display: flex;
     justify-content: center;
-    padding: 2rem 0;
+    padding-top: 0.25rem;
+    color:white;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+.divider{
+    align-items: center;
+    height: 2px;
+    width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+.footer h2{
+    padding-top: 0.5rem;
+    font-weight: 100;
+    font-size: 1rem;
 
 }
 
-.footer h1{
-    color:white;
-    font-weight: 100;
-    font-size: 1rem;
+.footer p{
+    padding-top: 0;
+    width:30rem;
+    padding-bottom: 0rem;
+    text-align: center;
 
 }
 
 #footersocials{
     top:0;
     justify-content: center;
+    
+}
+#footersocials svg{
+    height: 30px;
 }
 
 
@@ -996,6 +1043,51 @@ footer{
     }
     .skill #java{
        transform: translate(-18px,-15px);
+    }
+    .footer{
+        width: 100%;
+        height: 16rem;
+        margin-top: 5rem;
+        background-color: var(--c1);
+    }
+    
+    .footer .container{
+        background: none;
+        display: flex;
+        justify-content: center;
+        padding-top: 1.25rem;
+        color:white;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    
+    }
+    .divider{
+        align-items: center;
+        height: 2px;
+        width: 25rem;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+    }
+    .footer h2{
+        padding-top: 0.5rem;
+        font-weight: 100;
+        font-size: 0.6rem;
+    
+    }
+    .projectconclusion{
+        font-size: 0.8rem;
+    }
+    .footer h1{
+        font-size: 1.5rem;
+    }
+    .footer p{
+        font-size: 0.8rem;
+    }
+
+    #footersocials svg{
+        height: 20px;
     }
  
 }

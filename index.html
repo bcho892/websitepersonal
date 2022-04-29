@@ -36,11 +36,11 @@
         <nav>
 
             <ul>
-
+                <li><a onclick ="window.scrollTo(0, 0)">Welcome</a></li>
                 <li><a onclick="scrollDown()">Goals</a></li>
                 <li><a onclick="scrollSkills()">Skills</a></li>
                 <li><a onclick="scrollProjects()">Projects</a></li>
-                <li><a href="">Choice</a></li>
+                
                 <svg  version="1.1" id="Layer_1"  width ="25px" height="25px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 122.88 95.95" onclick= "menuOpen()" style="enable-background:new 0 0 122.88 95.95" xml:space="preserve"><style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;}</style><g><path  class="st0" d="M8.94,0h105c4.92,0,8.94,4.02,8.94,8.94l0,0c0,4.92-4.02,8.94-8.94,8.94h-105C4.02,17.88,0,13.86,0,8.94l0,0 C0,4.02,4.02,0,8.94,0L8.94,0z M8.94,78.07h105c4.92,0,8.94,4.02,8.94,8.94l0,0c0,4.92-4.02,8.94-8.94,8.94h-105 C4.02,95.95,0,91.93,0,87.01l0,0C0,82.09,4.02,78.07,8.94,78.07L8.94,78.07z M8.94,39.03h105c4.92,0,8.94,4.02,8.94,8.94l0,0 c0,4.92-4.02,8.94-8.94,8.94h-105C4.02,56.91,0,52.89,0,47.97l0,0C0,43.06,4.02,39.03,8.94,39.03L8.94,39.03z"/></g></svg>
 
             </ul>
@@ -92,10 +92,10 @@
     
        
     </div>
-    <div class="cards" >
+    <div class="cards"  id="goals">
 
       <h5 class="card-title">Goals</h5>
-      <p class="card-text">I am currently a second year student, who enjoys problem solving regardless of the challenge faced. In particular I enjoy technology-related ideas and problems, such as coding and design (this website was made from scratch using HTML and CSS!), and in the future hope to be involved in the field of wireless communications. As of now, my main focus is getting familiar with the field of front-end as well as desktop apps, due to the transferability of these skills to many other fields. <br><br>There is so much to be learned in today's world; as such I am always keeping an open mind to whatever is to come my way!</p>
+      <p class="card-text">I am currently a second year BE student, who enjoys problem solving regardless of the challenge faced. In particular I enjoy technology-related ideas and problems, such as coding and design (this website was made from scratch using HTML and CSS!), and in the future hope to be involved in the field of wireless communications. As of now, my main focus is getting familiar with the field of front-end as well as desktop apps, due to the transferability of these skills to many other fields. <br><br>There is so much to be learned in today's world; as such I am always keeping an open mind to whatever is to come my way!</p>
    
     </div>
     <div class="line" id="line1"></div>
@@ -103,7 +103,7 @@
     <div class="cards" id="interests">
 
         <h5 class="card-title">Interested in/currently learning:</h5>
-        <p class="card-text">Backend Development (SQL, PHP), Network Security, TypeScript, C++ </p>
+        <p class="card-text">Backend Development (SQL, PHP), TypeScript, C++ </p>
      
       </div>
      
@@ -278,32 +278,36 @@
             <h5 class="card-title">LH SPAMMER</h5>
             <p class="card-text">This is a JavaFX project which makes use of the Robot library to automatically send messages periodically, based on user input from the UI</p>
             <img src="lhpreview.png" alt="">
-            <a href="#" class="btn btn-primary">Go somewhere</a>
 
         </div>
-          <div class="card-body">
+          <div class="card-body" style="height:17rem">
             <h5 class="card-title">Image Collection Reader</h5>
-            <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <p class="card-text">JavaFX project that involves creating an interface used for reading folder of images, ordered by the users, this is generally applicable for manga/novels which have their content in png/jpg form, acting as an alternative to conversion to PDF. </p>
 
           </div>
         
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">In Progress...</h5>
             <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
           </div>
-     
+        <div class="container">
+            <div class="projectconclusion">
+            <p>For more info, feel free to check out my <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a><br>The source for this website can also be found there.</p>
+        </div>
+        </div>
         <div class="footer">
             <div class="container">
                 <div class="personalinfo">
-                    <h1>Benson Cho - Personal Website</h1>
+                    <h1>About</h1>
+                    <p>I enjoy using technical skills for the purpose of designing and solving problems, thank you for staying till the end of the website!~ <br>As of 2022 website is being updated.</p>
+                    <div class="divider"></div>
+                    <h2>Benson Cho - Personal Website</h2>
                     <div class="socials" id="footersocials">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="50px" width = "50px" viewBox="0 0 16 16"><path fill= "#415a77" fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>                
-                        <svg width="50px" height="50px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0ZM11.5216 19.8778H16.9605V36.2196H11.5216V19.8778ZM17.3188 14.8227C17.2835 13.2204 16.1377 12 14.277 12C12.4164 12 11.2 13.2204 11.2 14.8227C11.2 16.3918 12.3805 17.6473 14.2064 17.6473H14.2412C16.1377 17.6473 17.3188 16.3918 17.3188 14.8227ZM30.3131 19.4941C33.8922 19.4941 36.5754 21.8303 36.5754 26.8497L36.5752 36.2196H31.1365V27.4767C31.1365 25.2807 30.3494 23.7822 28.3805 23.7822C26.8779 23.7822 25.9829 24.7924 25.5898 25.7682C25.446 26.1178 25.4107 26.605 25.4107 27.0934V36.22H19.9711C19.9711 36.22 20.0428 21.4117 19.9711 19.8783H25.4107V22.1929C26.1325 21.0802 27.4254 19.4941 30.3131 19.4941Z" fill="#415a77"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="50px" width = "50px" viewBox="0 0 16 16"><path fill= "white" fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>                
+                        <svg width="50px" height="50px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0ZM11.5216 19.8778H16.9605V36.2196H11.5216V19.8778ZM17.3188 14.8227C17.2835 13.2204 16.1377 12 14.277 12C12.4164 12 11.2 13.2204 11.2 14.8227C11.2 16.3918 12.3805 17.6473 14.2064 17.6473H14.2412C16.1377 17.6473 17.3188 16.3918 17.3188 14.8227ZM30.3131 19.4941C33.8922 19.4941 36.5754 21.8303 36.5754 26.8497L36.5752 36.2196H31.1365V27.4767C31.1365 25.2807 30.3494 23.7822 28.3805 23.7822C26.8779 23.7822 25.9829 24.7924 25.5898 25.7682C25.446 26.1178 25.4107 26.605 25.4107 27.0934V36.22H19.9711C19.9711 36.22 20.0428 21.4117 19.9711 19.8783H25.4107V22.1929C26.1325 21.0802 27.4254 19.4941 30.3131 19.4941Z" fill="white"/></svg>
                         <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width = "50px" height="50px" viewBox="0 0 216 216" style="enable-background:new 0 0 216 216;" xml:space="preserve">
-                        <path fill = "#415a77" d="M108,0C48.353,0,0,48.353,0,108s48.353,108,108,108s108-48.353,108-108S167.647,0,108,0z M156.657,60L107.96,98.498
+                        <path fill = "white" d="M108,0C48.353,0,0,48.353,0,108s48.353,108,108,108s108-48.353,108-108S167.647,0,108,0z M156.657,60L107.96,98.498
                         L57.679,60H156.657z M161.667,156h-109V76.259l50.244,38.11c1.347,1.03,3.34,1.545,4.947,1.545c1.645,0,3.073-0.54,4.435-1.616
                         l49.374-39.276V156z"/></svg>
                     </div>
