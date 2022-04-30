@@ -1096,7 +1096,7 @@ footer{
     }
  
 }
-@media only screen and (max-width:440px) {
+@media only screen and (max-width:500px) {
     .details h1{
         font-size: 3.3rem;
         
