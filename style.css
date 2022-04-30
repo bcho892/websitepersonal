@@ -1124,12 +1124,14 @@ footer{
         transform: translate(-2rem, 3rem);
     }
 
-    #mobilesocials svg{
-        width: 24px;
-        height: 24px;
-    }
+
     .container1::after{
         position: absolute;
         transform: translateY(0.5rem);
+    }
+
+    .skillintro p{
+        font-size: 1rem;
+        text-align: center;
     }
 }
