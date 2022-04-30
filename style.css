@@ -366,6 +366,7 @@ b{
     position: relative;
     top:16.5rem;
     justify-content: right;
+    padding-right: 1rem;
 }
 
 .socials svg{
@@ -671,7 +672,9 @@ footer{
 }
 
 
-
+#wip{
+    height: 6rem;
+}
 
 
 .projectconclusion{
@@ -727,7 +730,7 @@ footer{
 #footersocials{
     top:0;
     justify-content: center;
-    
+    padding: 0 0;
 }
 #footersocials svg{
     height: 30px;
@@ -886,8 +889,8 @@ footer{
     }
     #mobilesocials svg{
         margin-bottom: 0.3rem;
-        height: 35px;
-        width: 35px;
+        height: 45px;
+        width: 45px;
     }
 
     .mobiledetails{
@@ -965,7 +968,9 @@ footer{
         -ms-transition: background-color 500ms linear;
         transition: background-color 500ms linear;  
     }
-
+    #goals p{
+        font-size: 0.8rem;
+    }
     #interests{
         margin-top: 0;
         display: flex;
@@ -1000,7 +1005,7 @@ footer{
         position:relative;
         background: linear-gradient(to bottom, var(--c1), var(--c4));
         width: 0.5rem;
-        height:17rem;
+        height:15rem;
         right: 0.5rem;
     }
 
@@ -1046,7 +1051,7 @@ footer{
     }
     .footer{
         width: 100%;
-        height: 16rem;
+        height: 18rem;
         margin-top: 5rem;
         background-color: var(--c1);
     }

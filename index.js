@@ -168,7 +168,17 @@ projectBox.addEventListener('mousemove', (e) => {
   if(!isDown) return;
   e.preventDefault();
   const x = e.pageX - projectBox.offsetLeft;
-  const walk = (x - startX) ; 
+  const walk = (x - startX) * 2; 
   projectBox.scrollLeft = scrollLeft - walk;
 
 });
+
+function giveEmail() {
+    /* Get the text field */
+    const copyText = "bensonconcept1@gmail.com";
+  
+    /* Select the text field */
+
+     /* Copy the text inside the text field */
+    navigator.clipboard.writeText(copyText);
+}
