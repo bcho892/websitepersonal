@@ -1156,4 +1156,13 @@ footer{
     .projecttitle{
         font-size: 3.4rem;
     }
+
+    .totop{
+        height:40px;
+        width: 40px;
+    }
+    .totop svg{
+        padding-top: 0.8rem;
+        height:1.5rem;
+    }
 }
