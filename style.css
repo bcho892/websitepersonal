@@ -639,6 +639,8 @@ footer{
     line-height: 2rem;
 }
 
+
+
 .projectdisplay p{
     margin-bottom: 0;
 }
@@ -757,7 +759,7 @@ footer{
     }
     
     .cards p{
-        line-height: 2.1rem;
+        line-height: 1.8rem;
     }
     
     .second-section{
