@@ -1121,7 +1121,7 @@ footer{
         width: 12rem;
     }
     #mobilesocials{
-        transform: translate(-2rem, 3rem);
+        transform: translate(1.6rem, 0);
     }
 
 
@@ -1131,7 +1131,29 @@ footer{
     }
 
     .skillintro p{
-        font-size: 1rem;
+        font-size: 0.8rem;
         text-align: center;
+        width: 100%;
+    }
+    #goals p{
+        font-size: 0.75rem;
+        line-height: 1.3rem;
+    }
+    .footer p{
+        font-size: 0.8rem;
+        width:25rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .projectdisplay p{
+       font-size: 0.9rem;
+    }
+    
+    .projectconclusion{
+        font-size: 0.55rem;
+    }
+
+    .projecttitle{
+        font-size: 3.4rem;
     }
 }
