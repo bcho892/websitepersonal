@@ -215,10 +215,7 @@ nav ul li.active::after{
     border-radius: 5px;
 }
 
-.card-title:hover{
-    cursor:pointer;
-    
-}
+
 
 .card-title a:hover{
     color: var(--c3);
@@ -401,7 +398,7 @@ b{
     cursor: pointer;
 }
 
-.socials svg:hover{
+.socials svg:hover, .projectdisplay svg:hover{
     -webkit-animation-name: bob;
     -webkit-animation-duration: 3s;
     -webkit-animation-iteration-count: infinite;
@@ -423,7 +420,7 @@ b{
     width: 100%;
     flex-direction: row;
     outline: 2px solid var(--c2);
-    box-shadow: 10px 10px 0 0 var(--c2);
+    box-shadow: 10px 10px 20px 0 var(--c2);
     margin-bottom: 6rem ;
 }
 
@@ -670,11 +667,17 @@ footer{
     flex-shrink: 0;
     position: relative;
     width:35rem;
-    box-shadow: 10px 10px 0 0 var(--c2);
     border-radius: 0;
+box-shadow: 10px 10px 20px 0 var(--c2);     
     line-height: 2rem;
 }
 
+.projectdisplay svg{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0.7rem 0.7rem;
+}
 
 
 .projectdisplay p{
@@ -1078,6 +1081,10 @@ footer{
     }
     .skill #java{
        transform: translate(-18px,-15px);
+    }
+
+    .skill #csharp{
+        transform: translate(-1rem,-0.5rem);
     }
     .footer{
         width: 100%;
