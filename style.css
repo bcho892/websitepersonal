@@ -668,7 +668,7 @@ footer{
     position: relative;
     width:35rem;
     border-radius: 0;
-box-shadow: 10px 10px 20px 0 var(--c2);     
+    box-shadow: 10px 10px 20px 0 var(--c2);     
     line-height: 2rem;
 }
 
@@ -968,6 +968,11 @@ box-shadow: 10px 10px 20px 0 var(--c2);
 
 
     }
+
+    nav ul li::after{
+        display: none;
+    }
+
     nav ul li{
         display: none;       
 
