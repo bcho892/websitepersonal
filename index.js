@@ -12,7 +12,7 @@ totop = $(".totop"),
  projecttitle = $("#projecttitle"),
  goals = $('#goals'),
  menu = $('nav svg');
-const skills = ['htmllevel', 'csslevel', 'jslevel', 'javalevel', 'clevel'];
+const skills = ['htmllevel', 'csslevel', 'jslevel', 'javalevel', 'cslevel', 'clevel'];
 $(window).scroll(function() {
     var hT = $('#page2').offset().top,
         wH = $(window).height(),

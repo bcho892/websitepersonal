@@ -215,6 +215,33 @@ nav ul li.active::after{
     border-radius: 5px;
 }
 
+.card-title:hover{
+    cursor:pointer;
+    
+}
+
+.card-title a:hover{
+    color: var(--c3);
+}
+
+.card-title::after{
+    margin-top: 5rem;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 4px;
+    width: 0;
+    text-align: center;
+    background-color:var(--c2);
+    transition: width 0.2s ease-out;
+    border-radius: 5px;
+}
+.card-title:hover::after{
+    width: 100%;
+    
+    }
+
 nav ul li a.active{
     color: white;
     -webkit-transition: color 500ms linear;
@@ -417,14 +444,19 @@ b{
     user-select: none;
     background-color: white;
     color: var(--c2);
+    
 }
+.card-body a{
+    text-decoration: none;
+    color: var(--c2);
 
+}
 .line{
 
     height: 5px;
     width: 0%;
     content: '';
-    background-color: var(--c2);
+    background-color: var(--c3);
     transition: width .4s ease-in;
     
 }
@@ -479,12 +511,13 @@ b{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: var(--c2)
 }
 
 .skillintro h1{
     font-size: 4rem;
     font-weight: 600;
-    color: var(--c2)
+    
 }
 
 .skillintro p{
@@ -572,7 +605,9 @@ footer{
     justify-content: left;
     
 }
-
+#studyplanner{
+    padding-left: 4.5rem;
+}
 .skillholder{
     margin-bottom: -3.5rem;
 }
@@ -586,11 +621,12 @@ footer{
     transition: width 0.4s ease-in;
 }
 
-.skills .skillbar .skills.htmllevel {width: 90%; transition: width 0.4s ease-in; }
+.skills .skillbar .skills.htmllevel {width: 90%; }
 .skills .skillbar .skills.csslevel {width: 80%;}
 .skills .skillbar .skills.jslevel {width: 70%;}
-.skills .skillbar .skills.javalevel {width: 70%;}
-.skills .skillbar .skills.clevel {width: 60%;}
+.skills .skillbar .skills.javalevel {width: 65%;}
+.skills .skillbar .skills.cslevel {width: 62%;}
+.skills .skillbar .skills.clevel {width: 50%;}
 
 .skill{
     display: flex;
@@ -624,7 +660,7 @@ footer{
     overflow-y: hidden;
     display: grid;
     grid-auto-flow: column;
-    justify-content: center;
+    justify-content: left;
     z-index: -1;
     padding-bottom: 2rem;
     margin-bottom: 4rem;
@@ -739,12 +775,7 @@ footer{
 }
 
 
-@media only screen and (min-width: 2140px){
-    .second-section .aboutimage{
-        clip-path: inset(49% 0 35% 0);
 
-    }
-}
 
 
 @media only screen and (min-width:1600px) {
@@ -771,7 +802,9 @@ footer{
     }
 
 
-  
+    .dragcircle{
+        display: block;
+    }
     
 
     .center{
@@ -864,14 +897,9 @@ footer{
 }
 
 @media only screen and (max-width: 2140px){
-    .projectdisplay{
-        justify-content: left;
 
-    }
 
-    .dragcircle{
-        display: block;
-    }
+
     
     .projectdisplay .card-body:hover{
         cursor:grab;
