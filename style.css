@@ -618,10 +618,10 @@ footer{
     transition: width 0.4s ease-in;
 }
 
-.skills .skillbar .skills.htmllevel {width: 90%; }
-.skills .skillbar .skills.csslevel {width: 80%;}
-.skills .skillbar .skills.jslevel {width: 70%;}
-.skills .skillbar .skills.javalevel {width: 65%;}
+.skills .skillbar .skills.htmllevel {width: 74%; }
+.skills .skillbar .skills.csslevel {width: 70%;}
+.skills .skillbar .skills.jslevel {width: 60%;}
+.skills .skillbar .skills.javalevel {width: 64%;}
 .skills .skillbar .skills.cslevel {width: 62%;}
 .skills .skillbar .skills.clevel {width: 50%;}
 
