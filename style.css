@@ -805,7 +805,12 @@ footer{
     transform: translateY(-4.5rem);
     }
 }
-
+@media only screen and (min-width:750px){
+    .dragcircle{
+        display: block;
+        pointer-events: none;
+    }
+}
 
 @media only screen and (min-width:1600px) {
 
@@ -831,10 +836,7 @@ footer{
     }
 
 
-    .dragcircle{
-        display: block;
-        pointer-events: none;
-    }
+
     
   
 
