@@ -1,8 +1,8 @@
 :root{
     --c1: #0d1b2a;
-    --c2: #1b263b;
+    --c4: #1b263b;
     --c3: #415a77;
-    --c4: #778da9;
+    --c2: #778da9;
     --c5: #e0e1dd;
 
 }
@@ -310,13 +310,14 @@ nav.active {
 
 .details h2{
     margin: -0.2rem 0.5rem;
-
+    color:var(--c1);
     font-size: 2rem;
 }
 
 .details h3{
     margin: 0.5rem 0.5rem;
     font-size: 1rem;
+    color:var(--c1);
 }
 
 b{
@@ -329,6 +330,7 @@ b{
     line-height: 1.6rem;
     font-weight: 100;
     width: 22rem;
+    color:var(--c1);
 }
 .details #readmore{
     outline: 1px solid var(--c2);
@@ -345,7 +347,7 @@ b{
 }
 
 .details #readmore:hover{
-    background-color: var(--c1);
+    background-color: var(--c3);
     color:white;
     -webkit-animation-name:none ;
     
@@ -366,21 +368,21 @@ b{
 #color-strip1{
     height: 20rem;
     width:0.5rem;
-    background:  var(--c1);
+    background:  var(--c2);
     transform: translateX(4rem);
 }
 
 #color-strip{
     height: 20rem;
     width:1rem;
-    background:  var(--c1);
+    background:  var(--c2);
     transform: translateX(5rem);
 }
 
 #color-box{
     height: 20rem;
     width:20rem;
-    background: linear-gradient(to right, var(--c1), var(--c4));
+    background: linear-gradient(to left, var(--c3), var(--c2));
     transform: translateX(6rem);
     border-radius:  0 2rem 2rem 0 ;
 }
@@ -596,7 +598,7 @@ footer{
 .skills .skillbar{
     width: 100%;
     height: 3rem;
-    border: 2px solid var(--c4);
+    border: 2px solid var(--c3);
     transform: translateY(-3rem);
     border-radius: 2px;
     display: flex;
@@ -614,7 +616,7 @@ footer{
 .skills .skillbar .skills{
     
     height: 100%;
-    background: linear-gradient(to right, var(--c2), var(--c4));
+    background: linear-gradient(to right, var(--c2), var(--c3));
     border-radius: 0 5px 5px 0;
     width: 0%;
     transition: width 0.4s ease-in;
@@ -733,7 +735,7 @@ footer{
     width: 100%;
     height: 16rem;
     margin-top: 5rem;
-    background-color: var(--c1);
+    background-color: var(--c3);
     display: flex;
 }
 
@@ -874,7 +876,6 @@ footer{
     #color-strip1{
         height: 28rem;
         width:0.5rem;
-        background:  var(--c1);
         margin-left: 15rem;
         transform: translateX(7rem);
     }
@@ -882,7 +883,6 @@ footer{
     #color-strip{
         height: 28rem;
         width:1rem;
-        background:  var(--c1);
         margin-left: 0rem;
         transform: translateX(8.5rem);
 
@@ -891,7 +891,6 @@ footer{
     #color-box{
         height: 28rem;
         width:20rem;
-        background: linear-gradient(to right, var(--c1), var(--c4));
         margin-left: 0rem;
         border-radius:  0 2rem 2rem 0 ;
         transform: translateX(10rem);
