@@ -116,6 +116,15 @@ body.active{
     transition: opacity 0.2s ease-out;
 }
 
+p{
+    color: var(--c1);
+}
+
+.skills p{
+    color: var(--c3);
+
+}
+
 .totop{
     position: fixed;
     width: 100px;
@@ -139,6 +148,10 @@ body.active{
 }
 .totop.active{
     display: block;
+}
+
+.introtext{
+    color:var(--c1);
 }
 
 nav svg{
@@ -540,8 +553,12 @@ footer{
     left: 0;
     display: flex;
     flex-direction: column;
+    
 }
 
+.personalinfo p{
+    color: white;
+}
 
 .rectangle-box {
     width: 100%;
@@ -588,6 +605,7 @@ footer{
     width: 100%;
     font-size: 1.5rem;
     text-align: center;
+   
 }
 
 .skills:last-child{
