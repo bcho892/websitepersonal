@@ -66,8 +66,10 @@
     background: var(--c2); 
   }
 
-html, body{
+html{
     overflow-x: hidden;
+   
+
 }
 
 body{
@@ -82,6 +84,46 @@ body.active{
     -webkit-transition: background-color 500ms linear;
     -ms-transition: background-color 500ms linear;
     transition: background-color 500ms linear;   
+}
+
+.dimbackground{
+    display: flex;
+    background: rgba(78, 78, 78, 0.7);
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1200;
+    
+}
+
+
+
+.deprecated{
+    height: fit-content;
+    padding:2rem 2rem;
+    position: relative;
+    border-radius: 2rem;
+    max-width: 80%;
+    background: rgba(255, 255, 255, 1);
+    
+}
+
+.deprecated svg{
+    height: 1.5rem;
+    width: 1.5rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+.deprecated svg:hover{
+    cursor: pointer;
+}
+
+.deprecated h6{
+    padding: 2rem;
 }
 
 .center{
